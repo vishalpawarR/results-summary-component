@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Primary colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients colors*/
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    background-color: var(--white);
+    font-size: 18px;
+}
+
+main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-container {
+    max-width: 660px;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 11px 21px 28px 7px hsl(241, 81%, 54%, 10%);
+}
+
+.summary-container > div {
+    flex: 1;
+    padding: 35px;
+}
+
+.result-col {
+    background-color: var(--light-royal-blue-bg);
+    background: linear-gradient(135deg, var(--light-slate-blue-bg) 0%, var(--light-royal-blue-bg) 100%);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.summary-col {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.result, .result-message {
+    color: var(--light-lavender);
+}
+
+.result-message {
+    font-size: 16px;
+}
+
+.summary-circle {
+    border-radius: 50%;
+    background-color: ;
+}
+
+.result, .summary {
+    font-size: 20px;
+}
+
+.result-score {
+    color: var(--white);
+    font-size: 65px;
+    font-weight: 700;
+}
